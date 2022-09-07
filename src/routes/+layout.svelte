@@ -4,7 +4,7 @@
 	import Header from './_header.svelte';
 </script>
 
-<div class="bg-nord0 h-screen ">
+<div class="bg-nord0 h-full ">
 	<Header />
 	<main>
 		<slot />
