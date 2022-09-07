@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import quotes from '$lib/quote.json';
+	const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+	console.log(quote);
+</script>
+
+<h1 class="text-center text-6xl font-bold">{quote.text}</h1>
+<p>{quote.author}</p>

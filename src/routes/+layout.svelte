@@ -1,9 +1,12 @@
 <script lang="ts">
 	import '../app.css';
-	import Header from '$lib/components/header.svelte';
+	import '../font.css';
+	import Header from './_header.svelte';
 </script>
 
-<Header />
-<main>
-	<slot />
-</main>
+<div class="bg-nord0 h-screen ">
+	<Header />
+	<main>
+		<slot />
+	</main>
+</div>
