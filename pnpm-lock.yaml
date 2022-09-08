@@ -12,6 +12,7 @@ specifiers:
   postcss: ^8.4.16
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.50.0
+  svelte-burger-menu: ^1.0.5
   svelte-check: ^2.9.0
   svelte-preprocess: ^4.10.7
   tailwindcss: ^3.1.8
@@ -19,9 +20,12 @@ specifiers:
   typescript: ^4.8.2
   vite: ^3.1.0
 
+dependencies:
+  svelte-burger-menu: 1.0.5
+
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.71
-  '@sveltejs/kit': 1.0.0-next.474_svelte@3.50.0+vite@3.1.0
+  '@sveltejs/kit': 1.0.0-next.477_svelte@3.50.0+vite@3.1.0
   '@typescript-eslint/eslint-plugin': 5.36.2_iurrlxgqcgk5svigzxakafpeuu
   '@typescript-eslint/parser': 5.36.2_yqf6kl63nyoq5megxukfnom5rm
   autoprefixer: 10.4.8_postcss@8.4.16
@@ -212,8 +216,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.474_svelte@3.50.0+vite@3.1.0:
-    resolution: {integrity: sha512-RhyWczm95S4VIlnjCAc5TPRGl2OoVWZ4cQRBKmzdF7MUScTduNzo6WB2JWkImgwE3nqdvepgnem56GbEUj3e5Q==}
+  /@sveltejs/kit/1.0.0-next.477_svelte@3.50.0+vite@3.1.0:
+    resolution: {integrity: sha512-r9sJZy9XuM4ztn0R9l6z12+oiJ6YuX2Go0GxwqC48axtf4wevmxPLw9M2XiSj4lINpT4lZn8JFRx2e9tCCMZyQ==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -267,8 +271,8 @@ packages:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
-  /@types/node/18.7.15:
-    resolution: {integrity: sha512-XnjpaI8Bgc3eBag2Aw4t2Uj/49lLBSStHWfqKvIuXD7FIrZyMLWp8KuAFHAqxMZYTF9l08N1ctUn9YNybZJVmQ==}
+  /@types/node/18.7.16:
+    resolution: {integrity: sha512-EQHhixfu+mkqHMZl1R2Ovuvn47PUw18azMJOTwSZr9/fhzHNGXAJ0ma0dayRVchprpCj0Kc1K1xKoWaATWF1qg==}
     dev: true
 
   /@types/pug/2.0.6:
@@ -278,7 +282,7 @@ packages:
   /@types/sass/1.43.1:
     resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
     dependencies:
-      '@types/node': 18.7.15
+      '@types/node': 18.7.16
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.36.2_iurrlxgqcgk5svigzxakafpeuu:
@@ -540,7 +544,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.3
-      caniuse-lite: 1.0.30001390
+      caniuse-lite: 1.0.30001393
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -582,8 +586,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001390
-      electron-to-chromium: 1.4.242
+      caniuse-lite: 1.0.30001393
+      electron-to-chromium: 1.4.244
       node-releases: 2.0.6
       update-browserslist-db: 1.0.7_browserslist@4.21.3
     dev: true
@@ -602,8 +606,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite/1.0.30001390:
-    resolution: {integrity: sha512-sS4CaUM+/+vqQUlCvCJ2WtDlV81aWtHhqeEVkLokVJJa3ViN4zDxAGfq9R8i1m90uGHxo99cy10Od+lvn3hf0g==}
+  /caniuse-lite/1.0.30001393:
+    resolution: {integrity: sha512-N/od11RX+Gsk+1qY/jbPa0R6zJupEa0lxeBG598EbrtblxVCTJsQwbRBm6+V+rxpc5lHKdsXb9RY83cZIPLseA==}
     dev: true
 
   /chalk/4.1.2:
@@ -758,8 +762,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium/1.4.242:
-    resolution: {integrity: sha512-nPdgMWtjjWGCtreW/2adkrB2jyHjClo9PtVhR6rW+oxa4E4Wom642Tn+5LslHP3XPL5MCpkn5/UEY60EXylNeQ==}
+  /electron-to-chromium/1.4.244:
+    resolution: {integrity: sha512-E21saXLt2eTDaTxgUtiJtBUqanF9A32wZasAwDZ8gvrqXoxrBrbwtDCx7c/PQTLp81wj4X0OLDeoGQg7eMo3+w==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -2265,6 +2269,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /svelte-burger-menu/1.0.5:
+    resolution: {integrity: sha512-lP2WqzO5awqgMQ+wuIoBqFASZhtbfjJsSJ529+cW6DpBY4Xg5TZsf3zMwG6QYUD/J7wy2cLYKiUmY2qdDHQdmw==}
+    dev: false
 
   /svelte-check/2.9.0_shxyscafa2tdzd4z2tgnnrhyyu:
     resolution: {integrity: sha512-9AVrtP7WbfDgCdqTZNPdj5CCCy1OrYMxFVWAWzNw7fl93c9klFJFtqzVXa6fovfQ050CcpUyJE2dPFL9TFAREw==}

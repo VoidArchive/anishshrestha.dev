@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import MobileMenu from '$lib/components/MobileMenu.svelte';
 
 	interface Link {
 		text: string;
@@ -17,7 +18,7 @@
 		},
 		{
 			text: 'Series',
-			url: '/series/'
+			url: '/series'
 		}
 		// ,{
 		// 	text: 'About Me',
@@ -62,7 +63,7 @@
 		</a>
 
 		<!-- Nav Items -->
-
+		<MobileMenu />
 		<div class="hidden md:flex gap-8">
 			{#each navLinks as link}
 				<a
