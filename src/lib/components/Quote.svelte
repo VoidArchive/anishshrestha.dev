@@ -17,7 +17,7 @@
 {#if visible}
 	<section
 		id="quotes"
-		transition:fly={{ y: -100, duration: 2000 }}
+		in:fly={{ y: -100, duration: 2000 }}
 		class="container flex flex-col items-center justify-center max-w-3xl my-8 md:my-16"
 	>
 		<h1 class="text-center text-xl font-semibold text-nord4 p-4">

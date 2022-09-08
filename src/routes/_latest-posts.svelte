@@ -8,12 +8,19 @@
 		<h1 class="text-2xl font-bold text-nord11">Latest Posts</h1>
 		<div class="w-32 md:w-64 h-[1px] bg-nord3 ml-2" />
 	</div>
-
+	<!-- Blog grid -->
 	<div class="grid grid-flow-row gap-4">
 		<BlogCard />
 		<BlogCard />
 		<BlogCard />
 	</div>
+
+	<!-- See more button -->
+	<a
+		href="/blog"
+		class="self-center text-center bg-transparent hover:bg-nord11 text-nord11 font-semibold hover:text-nord4 py-2 px-4 border border-nord11 hover:border-transparent rounded"
+		>See more</a
+	>
 </section>
 
 <style>

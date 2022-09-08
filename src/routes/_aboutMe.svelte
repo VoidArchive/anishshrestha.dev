@@ -16,7 +16,7 @@
 				co-founder of <a
 					class="font-semibold link-underline link-underline-black"
 					href="https://bhetum.co"
-					rel="noopener noreferrer"
+					rel="noopener"
 					target="_blank">Bhetum</a
 				>
 				that makes meeting new people easy. Before that, I worked as a backend engineer with python and
@@ -27,14 +27,14 @@
 				my life reading books. But for now, I have been learning <a
 					class="font-semibold link-underline link-underline-black"
 					href="https://kit.svelte.dev/"
-					rel="noopener noreferrer"
+					rel="noopener"
 					target="_blank">SvelteKit with Typescript</a
 				>
 				for full-stack web development and
 				<a
 					class="font-semibold link-underline link-underline-black"
 					href="https://www.rust-lang.org/"
-					rel="noopener noreferrer"
+					rel="noopener"
 					target="_blank">Rust</a
 				> on the side for data structures and algorithms.
 			</p>

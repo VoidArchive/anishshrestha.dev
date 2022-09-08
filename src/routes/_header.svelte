@@ -74,7 +74,7 @@
 			{/each}
 
 			<!-- Github Icon SVG -->
-			<a href="https://github.com/voidarchive" rel="noopener noreferrer" target="_blank">
+			<a href="https://github.com/voidarchive" rel="noopener" target="_blank">
 				<svg
 					class="hover:fill-nord11 fill-nord4 transition-all"
 					width="24"
