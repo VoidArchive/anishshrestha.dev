@@ -32,11 +32,11 @@
 </script>
 
 <header class="container mx-auto">
-	<nav class="pt-6 px-4 md:px-8 flex items-center justify-between">
+	<nav class="pt-6 px-4 md:px-8 flex items-center justify-between ">
 		<!-- Anish Logo -->
 		<a href="/"
 			><svg
-				class="hover:fill-nord11 fill-nord4"
+				class="hover:fill-nord11 fill-nord4 transition-all	"
 				width="92"
 				height="36"
 				viewBox="0 0 92 36"
@@ -67,15 +67,16 @@
 			{#each navLinks as link}
 				<a
 					href={link.url}
-					class="hover:text-nord12 {link.url === $page.url.pathname ? 'text-nord12' : 'text-nord4'}"
-					>{link.text}</a
+					class="transition-all hover:text-nord12 {link.url === $page.url.pathname
+						? 'text-nord12'
+						: 'text-nord4'}">{link.text}</a
 				>
 			{/each}
 
 			<!-- Github Icon SVG -->
-			<a href="https://github.com/voidarchive">
+			<a href="https://github.com/voidarchive" rel="noopener noreferrer" target="_blank">
 				<svg
-					class="hover:fill-nord11 fill-nord4"
+					class="hover:fill-nord11 fill-nord4 transition-all"
 					width="24"
 					height="24"
 					viewBox="0 0 24 24"

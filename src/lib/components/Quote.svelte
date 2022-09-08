@@ -1,37 +1,22 @@
 <script lang="ts">
 	import quotes from '$lib/quote.json';
-	import { fly, fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
-	const quote = quotes[Math.floor(Math.random() * quotes.length)];
-
+	interface Quote {
+		text: string;
+		author: string;
+	}
+	const quote: Quote = quotes[Math.floor(Math.random() * quotes.length)];
 	export let visible: boolean = false;
 	onMount(() => {
 		visible = true;
 	});
-
-	function typewriter(node: Node, { speed = 1 }) {
-		const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
-
-		if (!valid) {
-			throw new Error(`This transition only works on elements with a single text node child`);
-		}
-
-		const text = node.textContent != null ? node.textContent : '';
-		const duration = text.length / (speed * 0.01);
-
-		return {
-			duration,
-			tick: (t: number) => {
-				const i = Math.trunc(text.length * t);
-				node.textContent = text.slice(0, i);
-			}
-		};
-	}
 </script>
 
 {#if visible}
-	<div
+	<section
+		id="quotes"
 		transition:fly={{ y: -100, duration: 2000 }}
 		class="container flex flex-col items-center justify-center max-w-3xl my-8 md:my-16"
 	>
@@ -71,7 +56,7 @@
 		<p class="text-nord11 text-sm">
 			- {quote.author}
 		</p>
-	</div>
+	</section>
 {/if}
 
 <style>

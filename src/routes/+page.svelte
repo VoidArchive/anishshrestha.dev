@@ -1,10 +1,11 @@
 <script lang="ts">
-	import Quote from '$lib/Quote.svelte';
+	import Quote from '$lib/components/Quote.svelte';
 	import AboutMe from './_aboutMe.svelte';
-	import { onMount } from 'svelte';
+	import Project from './_latest-posts.svelte';
 </script>
 
-<div class="container flex flex-col gap-8">
+<div class="container grid gap-8 mx-auto">
 	<Quote />
 	<AboutMe />
+	<Project />
 </div>

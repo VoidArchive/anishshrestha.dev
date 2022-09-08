@@ -5,3 +5,23 @@
 /* div {
 	outline: 1px solid black;
 } */
+/* Works on Firefox */
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #2e3440 #bf616a;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #2e3440;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #bf616a;
+	border-radius: 1rem;
+}
