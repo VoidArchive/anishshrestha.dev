@@ -25,17 +25,12 @@
 		// 	url: '/about'
 		// }
 	];
-
-	let mobileMenu: boolean = false;
-	function menuClick() {
-		mobileMenu = !mobileMenu;
-	}
 </script>
 
 <header class="container mx-auto">
 	<nav class="pt-6 px-4 md:px-8 flex items-center justify-between ">
 		<!-- Anish Logo -->
-		<a href="/"
+		<a alt="anish-logo" href="/"
 			><svg
 				class="hover:fill-nord11 fill-nord4 transition-all	"
 				width="92"

@@ -46,7 +46,7 @@
 	<div class="md:w-10 md:fixed bottom-0 md:right-auto md:left-4 md:z-10">
 		<div class="line gap-6 justify-center">
 			{#each socialLinks as icon}
-				<a href={icon.url} target="_blank" rel="noopener">
+				<a href={icon.url} target="_blank" rel="noopener" alt={icon.alt}>
 					<svg
 						class=" stroke-nord4 hover:stroke-nord11 scale-90 hover:scale-100 duration-300"
 						width="24"

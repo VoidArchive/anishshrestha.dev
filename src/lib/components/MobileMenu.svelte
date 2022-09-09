@@ -35,7 +35,7 @@
 	}
 </script>
 
-<nav class="md:hidden">
+<nav class="md:hidden" aria-label="Main menu">
 	{#if visible}
 		<div
 			transition:fade
@@ -47,7 +47,7 @@
 		</div>
 	{/if}
 
-	<button on:click={menuToggle} class:visible class="hamburger">
+	<button on:click={menuToggle} class:visible class="hamburger" aria-expanded={visible}>
 		<span class="hamburger-top" />
 		<span class="hamburger-middle" />
 		<span class="hamburger-bottom" />

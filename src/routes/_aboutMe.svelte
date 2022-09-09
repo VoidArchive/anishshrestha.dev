@@ -54,7 +54,7 @@
 			<img
 				width="300"
 				height="300"
-				class="rounded-xl grayscale hover:grayscale-0 scale-90 hover:scale-100 ease-in duration-300"
+				class="rounded-xl grayscale hover:grayscale-0 scale-90 hover:scale-100 ease-in duration-300 drop-shadow-lg"
 				src="/me.webp"
 				alt="This is me"
 			/>
