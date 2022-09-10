@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import MobileMenu from '$lib/components/MobileMenu.svelte';
+	import MobileMenu from './_mobileMenu.svelte';
 
 	interface Link {
 		text: string;

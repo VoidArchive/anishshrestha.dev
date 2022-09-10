@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Quote from '$lib/components/Quote.svelte';
+	import Quote from './_hero.svelte';
 	import AboutMe from './_aboutMe.svelte';
 	import Project from './_latest-posts.svelte';
 	import Contact from './_contact.svelte';

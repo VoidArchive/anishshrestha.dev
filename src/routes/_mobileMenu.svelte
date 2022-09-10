@@ -8,7 +8,7 @@
 	const navLinks: Link[] = [
 		{
 			text: 'Home',
-			url: '/home'
+			url: '/'
 		},
 		{
 			text: 'Projects',
@@ -42,11 +42,11 @@
 <nav class="md:hidden" aria-label="Main menu">
 	{#if visible}
 		<div
-			transition:fade
+			in:fade
 			class="rounded-md flex z-10 absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-nord3 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
 		>
 			{#each navLinks as link}
-				<a href={link.url} class="text-nord4">{link.text}</a>
+				<a on:click={menuToggle} href={link.url} class="text-nord4">{link.text}</a>
 			{/each}
 		</div>
 	{/if}
