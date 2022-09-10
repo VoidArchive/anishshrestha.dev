@@ -9,7 +9,9 @@
 	<title>Anish Shrestha</title>
 </svelte:head>
 <div class="container grid gap-8 mx-auto">
-	<Quote />
+	<section id="quotes" class="min-h-[20em] h-auto">
+		<Quote />
+	</section>
 	<AboutMe />
 	<Project />
 	<Contact />

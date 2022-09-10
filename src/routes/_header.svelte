@@ -5,12 +5,14 @@
 	interface Link {
 		text: string;
 		url: string;
+		disabled?: boolean;
 	}
 
 	const navLinks: Link[] = [
 		{
 			text: 'Projects',
-			url: '/projects'
+			url: '/projects',
+			disabled: true
 		},
 		{
 			text: 'Blog',
@@ -18,7 +20,8 @@
 		},
 		{
 			text: 'Series',
-			url: '/series'
+			url: '/series',
+			disabled: true
 		}
 		// ,{
 		// 	text: 'About Me',
@@ -62,11 +65,14 @@
 		<div class="hidden md:flex gap-8">
 			{#each navLinks as link}
 				<a
-					href={link.url}
+					href={link.disabled === true ? '' : link.url}
 					class="transition-all hover:text-nord12 {link.url === $page.url.pathname
 						? 'text-nord12'
-						: 'text-nord4'}">{link.text}</a
-				>
+						: 'text-nord4'}
+
+					{link.disabled === true ? 'text-nord2 hover:text-nord2 cursor-not-allowed' : 'text-nord4'}"
+					>{link.text}
+				</a>
 			{/each}
 
 			<!-- Github Icon SVG -->

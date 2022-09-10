@@ -5,7 +5,7 @@
 	import Footer from './_footer.svelte';
 </script>
 
-<div class="bg-nord0 h-full ">
+<div class="bg-nord0 h-full">
 	<Header />
 	<main>
 		<slot />

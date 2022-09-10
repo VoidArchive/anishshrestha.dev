@@ -15,8 +15,7 @@
 </script>
 
 {#if visible}
-	<section
-		id="quotes"
+	<div
 		in:fly={{ y: -100, duration: 2000 }}
 		class="container flex flex-col items-center justify-center max-w-3xl my-8 md:my-16"
 	>
@@ -56,7 +55,7 @@
 		<p class="text-nord11 text-sm">
 			- {quote.author}
 		</p>
-	</section>
+	</div>
 {/if}
 
 <style>

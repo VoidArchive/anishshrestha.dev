@@ -12,15 +12,19 @@
 		<!-- Paragraph Div -->
 		<div class="md:w-1/2 space-y-2 text-base">
 			<p class="text-nord4 ">
-				Hey! My name is Anish and I write and build random stuff on the Internet. I am also the
+				<!-- Hey! My name is Anish and I write and build random stuff on the Internet. I am also the
 				co-founder of <a
 					class="font-semibold link-underline link-underline-black"
 					href="https://bhetum.co"
 					rel="noopener"
 					target="_blank">Bhetum</a
 				>
-				that makes meeting new people easy. Before that, I worked as a backend engineer with python and
-				Odoo(OpenERP).
+				that makes meeting new people easy. Before that, I worked as a backend engineer with python and Odoo-->
+
+				<!-- Delete this later -->
+				Hey! My name is Anish and I write and build random stuff on the Internet. I am also working as
+				a backend engineer with python and Odoo. The quote you see above are things that resonates with
+				me, it loads new one on every refresh. Try it out!
 			</p>
 			<p class="text-nord4">
 				My goal in life is to someday, open a library in a secluded mountain and spend the rest of
