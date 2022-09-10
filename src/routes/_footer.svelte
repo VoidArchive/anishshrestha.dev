@@ -26,6 +26,11 @@
 			alt: 'twitter',
 			id: '/SocialSprite.svg#twitter',
 			url: 'https://twitter.com/VoidArchive'
+		},
+		{
+			alt: 'mail',
+			id: '/SocialSprite.svg#mail',
+			url: 'mailto:anishshresthacode@gmail.com'
 		}
 	];
 </script>
@@ -48,7 +53,9 @@
 			{#each socialLinks as icon}
 				<a href={icon.url} target="_blank" rel="noopener" alt={icon.alt}>
 					<svg
-						class=" stroke-nord4 hover:stroke-nord11 scale-90 hover:scale-100 duration-300"
+						class="{icon.alt === 'mail'
+							? 'md:hidden'
+							: ''} stroke-nord4 hover:stroke-nord11 scale-90 hover:scale-100 duration-300"
 						width="24"
 						height="24"
 					>

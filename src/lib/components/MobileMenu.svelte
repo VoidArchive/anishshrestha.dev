@@ -25,6 +25,10 @@
 		{
 			text: 'Github',
 			url: '/about'
+		},
+		{
+			text: 'Give Feedback',
+			url: 'https://github.com/VoidArchive/Feedback/issues/new'
 		}
 	];
 

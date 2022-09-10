@@ -1,6 +1,6 @@
 <script lang="ts"></script>
 
-<section id="contact" class="container flex flex-col gap-4">
+<section id="contact" class="container flex flex-col gap-6">
 	<!-- Title Get in touch with a line -->
 	<div class="flex items-center">
 		<h1 class="text-2xl font-bold text-nord11">Get In Touch</h1>
@@ -8,9 +8,9 @@
 	</div>
 
 	<div class="text-center flex flex-col gap-4 items-center">
-		<p class="text-nord4">
-			I don’t really want to deal with form and captcha. So if you like to contact me you can mail
-			me directly or give me feedback on github. Sorry of inconvenience. Feel free to message me.
+		<p class="text-nord4 md:w-3/4">
+			I don’t really want to deal with form and captcha to protect me from spam. So if you like to
+			contact me you can mail me directly or give me feedback on github. Sorry for inconvenience.
 		</p>
 
 		<a

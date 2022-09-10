@@ -22,11 +22,11 @@
 			text: 'Series',
 			url: '/series',
 			disabled: true
+		},
+		{
+			text: 'Feedback',
+			url: 'https://github.com/VoidArchive/Feedback/issues/new'
 		}
-		// ,{
-		// 	text: 'About Me',
-		// 	url: '/about'
-		// }
 	];
 </script>
 
@@ -65,6 +65,7 @@
 		<div class="hidden md:flex gap-8">
 			{#each navLinks as link}
 				<a
+					target={link.text === 'Feedback' ? '_blank' : ''}
 					href={link.disabled === true ? '' : link.url}
 					class="transition-all hover:text-nord12 {link.url === $page.url.pathname
 						? 'text-nord12'
