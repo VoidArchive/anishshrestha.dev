@@ -1,9 +1,25 @@
 <script lang="ts"></script>
 
 <section id="contact" class="container flex flex-col gap-4">
+	<!-- Title Get in touch with a line -->
 	<div class="flex items-center">
 		<h1 class="text-2xl font-bold text-nord11">Get In Touch</h1>
 		<div class="w-32 md:w-64 h-[1px] bg-nord3 ml-2" />
+	</div>
+
+	<div class="text-center flex flex-col gap-4 items-center">
+		<p class="text-nord4">
+			I don’t really want to deal with form and captcha. So if you like to contact me you can mail
+			me directly or give me feedback on github. Sorry of inconvenience. Feel free to message me.
+		</p>
+
+		<a
+			href="https://github.com/VoidArchive/Feedback/issues/new"
+			target="_blank"
+			rel="noopener"
+			class="mb-12 ease-in duration-300 self-center text-center bg-transparent focus:bg-nord11 focus:text-nord4 hover:bg-nord11 text-nord11 font-semibold hover:text-nord4 py-2 px-4 border border-nord11 hover:border-transparent rounded"
+			>Give Feedback</a
+		>
 	</div>
 </section>
 
