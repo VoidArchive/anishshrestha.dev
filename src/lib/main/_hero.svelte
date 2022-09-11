@@ -1,5 +1,5 @@
 <script lang="ts">
-	import quotes from '$lib/quote.json';
+	import quotes from './quote.json';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import Quote from '$lib/components/Quote.svelte';

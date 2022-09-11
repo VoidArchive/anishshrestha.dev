@@ -25,3 +25,17 @@
 	background-color: #bf616a;
 	border-radius: 1rem;
 }
+
+.link-underline {
+	border-bottom-width: 0;
+	background-image: linear-gradient(transparent, transparent), linear-gradient(#bf616a, #bf616a);
+	background-size: 0 3px;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline:hover {
+	background-size: 100% 3px;
+	background-position: 0 100%;
+}

@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="/prism-nord.css" />
+	<link rel="stylesheet" href="/prism-gruvbox.css" />
 	<title>
 		{title}
 	</title>

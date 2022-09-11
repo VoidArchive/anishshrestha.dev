@@ -29,14 +29,14 @@
 			<p class="text-nord4">
 				My goal in life is to someday, open a library in a secluded mountain and spend the rest of
 				my life reading books. But for now, I have been learning <a
-					class="font-semibold link-underline link-underline-black"
+					class="font-semibold link-underline"
 					href="https://kit.svelte.dev/"
 					rel="noopener"
 					target="_blank">SvelteKit with Typescript</a
 				>
 				for full-stack web development and
 				<a
-					class="font-semibold link-underline link-underline-black"
+					class="font-semibold link-underline"
 					href="https://www.rust-lang.org/"
 					rel="noopener"
 					target="_blank">Rust</a
@@ -80,23 +80,5 @@
 		color: #bf616a;
 		font-size: 12px;
 		margin-right: 8px;
-	}
-
-	.link-underline {
-		border-bottom-width: 0;
-		background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-		background-size: 0 3px;
-		background-position: 0 100%;
-		background-repeat: no-repeat;
-		transition: background-size 0.5s ease-in-out;
-	}
-
-	.link-underline-black {
-		background-image: linear-gradient(transparent, transparent), linear-gradient(#bf616a, #bf616a);
-	}
-
-	.link-underline:hover {
-		background-size: 100% 3px;
-		background-position: 0 100%;
 	}
 </style>
