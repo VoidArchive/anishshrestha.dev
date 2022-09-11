@@ -1,4 +1,4 @@
-<main class=" container bg-nord0 h-screen">
+<main class=" container bg-nord0 h-full">
 	<slot />
 </main>
 

@@ -7,19 +7,31 @@
 </script>
 
 <svelte:head>
+	<link rel="stylesheet" href="/prism-nord.css" />
 	<title>
 		{title}
 	</title>
 </svelte:head>
 
-<div class="mt-12">
+<div class="space-y-12">
 	<Quote>{quote}</Quote>
 
-	<article class="container prose prose-nord mt-12">
+	<article class="container prose prose-nord mx-auto">
 		<h1>{title}</h1>
 		<div>
 			Published: {date}
 		</div>
 		<svelte:component this={data.post} />
 	</article>
+</div>
+
+<div>
+	<script
+		src="https://utteranc.es/client.js"
+		repo="voidarchive/anishshrestha.dev"
+		issue-term="pathname"
+		theme="dark-blue"
+		crossorigin="anonymous"
+		async>
+	</script>
 </div>
