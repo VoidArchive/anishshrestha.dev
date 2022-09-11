@@ -1,5 +1,8 @@
+const typography = require('@tailwindcss/typography');
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
+	mode: 'jit',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
@@ -23,8 +26,33 @@ module.exports = {
 				nord13: '#EBCB8B', //Aurora Yellow
 				nord14: '#A3BE8C', //Aurora Green
 				nord15: '#B48EAD' //Aurora Purple
-			}
+			},
+
+			typography: ({ theme }) => ({
+				nord: {
+					css: {
+						'--tw-prose-body': theme('colors.nord4'),
+						'--tw-prose-headings': theme('colors.nord10'),
+						'--tw-prose-lead': theme('colors.nord4'),
+						'--tw-prose-links': theme('colors.nord11'),
+						'--tw-prose-bold': theme('colors.nord11'),
+						'--tw-prose-counters': theme('colors.nord11'),
+						'--tw-prose-bullets': theme('colors.nord11'),
+						'--tw-prose-hr': theme('colors.nord11'),
+						'--tw-prose-quotes': theme('colors.nord4'),
+						'--tw-prose-quote-borders': theme('colors.nord11'),
+						'--tw-prose-captions': theme('colors.nord4'),
+						'--tw-prose-code': theme('colors.nord4'),
+						'--tw-prose-pre-code': theme('colors.nord4'),
+						'--tw-prose-pre-bg': theme('colors.nord3'),
+						'--tw-prose-th-borders': theme('colors.nord3'),
+						'--tw-prose-td-borders': theme('colors.nord3')
+					}
+				}
+			})
 		}
 	},
-	plugins: []
+	plugins: [typography]
 };
+
+module.exports = config;

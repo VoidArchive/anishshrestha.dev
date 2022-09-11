@@ -9,7 +9,7 @@
 		author: string;
 	}
 	const quote: Quote = quotes[Math.floor(Math.random() * quotes.length)];
-	export let visible: boolean = false;
+	let visible: boolean = false;
 	onMount(() => {
 		visible = true;
 	});
