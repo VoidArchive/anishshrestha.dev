@@ -15,13 +15,12 @@
 
 <div class="bg-nord0 h-full">
 	{#if load}
-		<Header />
-
 		{#key data.currentRoute}
+			<Header />
 			<main in:fade={{ duration: 2000 }} out:fade={{ duration: 150 }}>
 				<slot />
 			</main>
+			<Footer />
 		{/key}
-		<Footer />
 	{/if}
 </div>
