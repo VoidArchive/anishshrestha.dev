@@ -6,6 +6,7 @@
 	import { fade } from 'svelte/transition';
 	import type { LayoutData } from './$types';
 	import { onMount } from 'svelte';
+
 	let load = false;
 	onMount(() => {
 		load = true;
@@ -17,7 +18,7 @@
 	{#if load}
 		{#key data.currentRoute}
 			<Header />
-			<main in:fade={{ duration: 2000 }} out:fade={{ duration: 150 }}>
+			<main in:fade={{ duration: 300 }} out:fade={{ duration: 150 }}>
 				<slot />
 			</main>
 			<Footer />

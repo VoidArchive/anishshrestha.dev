@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Hero from '$lib/main/_hero.svelte';
 	import AboutMe from '$lib/main/_aboutMe.svelte';
-	import Project from '$lib/main/_latest-posts.svelte';
+	import Blog from '$lib/main/_latest-posts.svelte';
 	import Contact from '$lib/main/_contact.svelte';
 </script>
 
@@ -13,6 +13,6 @@
 		<Hero />
 	</section>
 	<AboutMe />
-	<Project />
+	<Blog />
 	<Contact />
 </div>
