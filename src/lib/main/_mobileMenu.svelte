@@ -1,36 +1,6 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	interface Link {
-		text: string;
-		url: string;
-	}
-
-	const navLinks: Link[] = [
-		{
-			text: 'Home',
-			url: '/'
-		},
-		{
-			text: 'Projects',
-			url: '/projects'
-		},
-		{
-			text: 'Blog',
-			url: '/blog'
-		},
-		{
-			text: 'Series',
-			url: '/series'
-		},
-		{
-			text: 'Github',
-			url: '/about'
-		},
-		{
-			text: 'Give Feedback',
-			url: 'https://github.com/VoidArchive/Feedback/issues/new'
-		}
-	];
+	import { mobileNavLinks } from '$lib/utils/config';
 
 	let visible = false;
 
@@ -45,7 +15,7 @@
 			in:fade
 			class="rounded-md flex z-10 absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-nord3 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
 		>
-			{#each navLinks as link}
+			{#each mobileNavLinks as link}
 				<a on:click={menuToggle} href={link.url} class="text-nord4">{link.text}</a>
 			{/each}
 		</div>

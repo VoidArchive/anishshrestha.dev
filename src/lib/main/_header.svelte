@@ -1,33 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import MobileMenu from './_mobileMenu.svelte';
-
-	interface Link {
-		text: string;
-		url: string;
-		disabled?: boolean;
-	}
-
-	const navLinks: Link[] = [
-		{
-			text: 'Projects',
-			url: '/projects',
-			disabled: true
-		},
-		{
-			text: 'Blog',
-			url: '/blog'
-		},
-		{
-			text: 'Series',
-			url: '/series',
-			disabled: true
-		},
-		{
-			text: 'Feedback',
-			url: 'https://github.com/VoidArchive/Feedback/issues/new'
-		}
-	];
+	import { navLinks } from '$lib/utils/config';
 </script>
 
 <header class="container mx-auto">

@@ -1,7 +1,10 @@
 ---
-title: Contains Duplicate with Rust
-date: '2022-08-01'
-quote: Duplicate for you
+title: 'Data Structure and Algorithms with Rust: Contains Duplicate'
+date: 2022-08-01
+subheading: Duplicate for you
+tags:
+- Rust
+- DSA
 ---
 Let's solve Leetcode with rust.
 I am starting this series with an easy question as I am a total beginner as rust and goal is learn the concept of rust as much as possible.
@@ -16,7 +19,7 @@ But the goal of this post is for me to learn rust and DSA, killing two bird with
 2. Sorting solution
 3. Hashset
 
-1. Brute force solution
+4. Brute force solution
 
 The easiest way that we can solve this problem is by brute forcing it, that is checking every number in the array to see if its equal with each other. If it is, we return true. If not we return false.
 

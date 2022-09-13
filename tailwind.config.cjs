@@ -32,12 +32,12 @@ const config = {
 				nord: {
 					css: {
 						'--tw-prose-body': theme('colors.nord4'),
-						'--tw-prose-headings': theme('colors.nord11'),
+						'--tw-prose-headings': theme('colors.nord8'),
 						'--tw-prose-lead': theme('colors.nord4'),
 						'--tw-prose-links': theme('colors.nord10'),
 						'--tw-prose-bold': theme('colors.nord4'),
-						'--tw-prose-counters': theme('colors.nord10'),
-						'--tw-prose-bullets': theme('colors.nord10'),
+						'--tw-prose-counters': theme('colors.nord11'),
+						'--tw-prose-bullets': theme('colors.nord11'),
 						'--tw-prose-hr': theme('colors.nord11'),
 						'--tw-prose-quotes': theme('colors.nord4'),
 						'--tw-prose-quote-borders': theme('colors.nord11'),

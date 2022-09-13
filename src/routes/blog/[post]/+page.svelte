@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Quote from '$lib/components/Quote.svelte';
-	import type { PageData } from './$types';
-	export let data: PageData;
+	import type { PageServerData } from './$types';
+	export let data: PageServerData;
 
-	const { title, date, quote } = data.meta;
+	const { title, excerpt, date, updated, coverImage, categories } = data.meta;
 </script>
 
 <svelte:head>
@@ -14,14 +14,15 @@
 </svelte:head>
 
 <div class="space-y-12">
-	<Quote>{quote}</Quote>
+	<Quote>{excerpt}</Quote>
 
 	<article class="container prose prose-nord mx-auto">
 		<h1>{title}</h1>
 		<div>
 			Published: {date}
 		</div>
-		<svelte:component this={data.post} />
+		<!-- <svelte:component this={data.post} /> -->
+		{@html data.PostContent}
 	</article>
 </div>
 
