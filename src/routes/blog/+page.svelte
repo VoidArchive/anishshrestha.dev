@@ -1,14 +1,20 @@
 <script lang="ts">
-	import BlogCard from '$lib/components/BlogCard.svelte';
+	import type { metadata } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
+
+	import BlogCard from '$lib/components/BlogCard.svelte';
+
 	export let data: PageServerData;
+	const posts: metadata[] = data.posts;
 </script>
 
 <svelte:head><title>Blog - Anish shrestha</title></svelte:head>
 
-<main class="container h-full bg-nord0 flex flex-col justify-center my-20">
+<main class="container h-screen bg-nord0 flex flex-col my-20">
 	<div class="">
-		<BlogCard posts={data.posts} />
+		{#each posts as post}
+			<BlogCard {post} />
+		{/each}
 	</div>
 </main>
 
