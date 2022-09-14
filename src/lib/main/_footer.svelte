@@ -68,7 +68,7 @@
 
 	<!-- Copyright div -->
 	<div class="text-nord4 text-center p-4 text-xs">
-		© {currentYear} Copyright: Anish shrestha.
+		© {currentYear} Copyright: Anish shrestha. Made with SvelteKit
 	</div>
 </footer>
 

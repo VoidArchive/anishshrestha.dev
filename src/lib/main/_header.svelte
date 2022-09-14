@@ -4,8 +4,8 @@
 	import { navLinks } from '$lib/utils/config';
 </script>
 
-<header class="container mx-auto">
-	<nav class="pt-6 px-4 md:px-8 flex items-center justify-between ">
+<header class="container mx-auto sticky top-0 bg-nord0 z-20 ">
+	<nav class=" pt-6 px-4 md:px-8 flex items-center justify-between ">
 		<!-- Anish Logo -->
 		<a alt="anish-logo" href="/"
 			><svg

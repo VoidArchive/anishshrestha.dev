@@ -30,7 +30,7 @@ export const navLinks: Link[] = [
 	},
 	{
 		text: 'Feedback',
-		url: 'https://github.com/VoidArchive/Feedback/issues/new'
+		url: 'https://github.com/VoidArchive/Feedback/issues/new?assignees=VoidArchive&labels=&template=feedback.md&title=feedback'
 	}
 ];
 
@@ -57,6 +57,16 @@ export const mobileNavLinks: Link[] = [
 	},
 	{
 		text: 'Give Feedback',
-		url: 'https://github.com/VoidArchive/Feedback/issues/new'
+		url: 'https://github.com/VoidArchive/Feedback/issues/new?assignees=VoidArchive&labels=&template=feedback.md&title=feedback'
 	}
 ];
+
+export interface metadata {
+	title: string;
+	slug: string;
+	excerpt: string;
+	coverImage?: string;
+	date: Date;
+	updated: Date;
+	categories?: string[];
+}
