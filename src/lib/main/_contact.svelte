@@ -8,12 +8,11 @@
 	</div>
 
 	<div class="text-center flex flex-col gap-4 items-center">
-		<p class="text-nord4 md:w-3/4">
-			I don’t really want to deal with form and captcha to protect me from spam. So if you like to
-			contact me you can mail me directly at <a
+		<p class="text-nord4 md:w-3/5">
+			If you want to contact me you can mail me directly at <a
 				class="link-underline"
 				href="mailto:anishshresthacode@gmail.com">anishshresthacode@gmail.com</a
-			> or give me feedback on github. Sorry for inconvenience.
+			> or give me feedback on github.
 		</p>
 
 		<a

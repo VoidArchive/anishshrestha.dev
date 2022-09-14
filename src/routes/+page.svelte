@@ -9,7 +9,7 @@
 
 	export let data: PageServerData;
 	const posts: metadata[] = data.posts;
-	console.log(posts);
+	console.log("Another wanderer, here to lick my father's boots. Good job. ");
 </script>
 
 <svelte:head>
