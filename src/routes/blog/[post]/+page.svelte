@@ -22,10 +22,10 @@
 	</title>
 </svelte:head>
 
-<div class="mt-20">
+<div class="mt-20 mx-6 md:mx-0">
 	<article class="container prose prose-nord mx-auto">
 		<!-- Heading -->
-		<div class="">
+		<div>
 			<h1 class="mb-2">{title}</h1>
 			<div class="  flex flex-col text-nord4 gap-2">
 				{#if date}
