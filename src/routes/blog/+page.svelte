@@ -1,14 +1,20 @@
 <script lang="ts">
-	import type { metadata } from '$lib/utils/config';
+	import type { Metadata } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
+	import { siteDescription, siteLink } from '$lib/utils/config';
+	import {} from '$lib/utils/config';
 
 	import BlogCard from '$lib/components/BlogCard.svelte';
 
 	export let data: PageServerData;
-	const posts: metadata[] = data.posts;
+	const posts: Metadata[] = data.posts;
 </script>
 
-<svelte:head><title>Blog - Anish shrestha</title></svelte:head>
+<svelte:head>
+	<title>Blog - Anish shrestha</title>
+	<meta data-key="description" name="description" content={siteDescription} />
+	<link rel="canonical" href="{siteLink}/blog/" />
+</svelte:head>
 
 <main class="container h-screen bg-nord0 flex flex-col my-20">
 	<div class="">

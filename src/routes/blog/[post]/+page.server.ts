@@ -6,7 +6,8 @@ export const load: PageServerLoad = async ({ params }) => {
 		const post = await import(`../../../posts/${params.post}.md`);
 		return {
 			PostContent: post.default.render().html,
-			meta: { ...post.metadata }
+			meta: { ...post.metadata },
+			slug: params.post
 		};
 	} catch (err) {
 		throw error(404);

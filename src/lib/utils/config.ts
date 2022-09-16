@@ -1,5 +1,6 @@
-export const siteTitle = 'Graveyard for my projects';
-export const siteDescription = 'A place where I share what I am learning';
+export const siteTitle = 'Anish shrestha';
+export const siteDescription =
+	'A place where I share what I am learning and where a put my unfinished project to give them my respect';
 export const siteURL = 'anishshrestha.dev';
 export const siteLink = 'https://www.anishshrestha.dev';
 export const siteAuthor = 'Anish shrestha';
@@ -23,11 +24,11 @@ export const navLinks: Link[] = [
 		text: 'Blog',
 		url: '/blog'
 	},
-	{
-		text: 'Series',
-		url: '/series',
-		disabled: true
-	},
+	// {
+	// 	text: 'Series',
+	// 	url: '/series',
+	// 	disabled: true
+	// },
 	{
 		text: 'Feedback',
 		url: 'https://github.com/VoidArchive/Feedback/issues/new?assignees=VoidArchive&labels=&template=feedback.md&title=feedback'
@@ -47,10 +48,10 @@ export const mobileNavLinks: Link[] = [
 		text: 'Blog',
 		url: '/blog'
 	},
-	{
-		text: 'Series',
-		url: '/series'
-	},
+	// {
+	// 	text: 'Series',
+	// 	url: '/series'
+	// },
 	{
 		text: 'Github',
 		url: '/about'
@@ -61,7 +62,7 @@ export const mobileNavLinks: Link[] = [
 	}
 ];
 
-export interface metadata {
+export interface Metadata {
 	title: string;
 	slug: string;
 	excerpt: string;

@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { siteLink } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
 
 	const { title, excerpt, date, updated, coverImage, categories } = data.meta;
+	const slug = data.slug;
 	const formattedDate = new Date(date)?.toLocaleDateString('en-us', {
 		year: 'numeric',
 		month: 'long',
@@ -20,6 +22,15 @@
 	<title>
 		{title}
 	</title>
+	<meta data-key="description" name="description" content={excerpt} />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={title} />
+	<meta name="twitter:title" content={title} />
+	<meta property="og:description" content={excerpt} />
+	<meta property="twitter:description" content={excerpt} />
+	<!-- TODO: Add image meta tags og:image and twitter:image -->
+
+	<link rel="canonical" href="{siteLink}/blog/{slug}" />
 </svelte:head>
 
 <div class="mt-20 mx-6 md:mx-0">
@@ -29,10 +40,10 @@
 			<h1 class="mb-2">{title}</h1>
 			<div class="  flex flex-col text-nord4 gap-2">
 				{#if date}
-					<p class="m-0">Published: {formattedDate}</p>
+					<time datetime={date} class="m-0">Published: {formattedDate}</time>
 				{/if}
 				{#if updated}
-					<p class="m-0">Updated: {formattedUpdated}</p>
+					<time datetime={updated} class="m-0">Updated: {formattedUpdated}</time>
 				{/if}
 				<!-- 
 				{#if categories}

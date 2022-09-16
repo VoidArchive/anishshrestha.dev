@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { metadata } from '$lib/utils/config';
+	import type { Metadata } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
+	import { siteLink, siteDescription } from '$lib/utils/config';
 
 	import Hero from '$lib/main/_hero.svelte';
 	import AboutMe from '$lib/main/_aboutMe.svelte';
@@ -8,12 +9,14 @@
 	import BlogCard from '$lib/components/BlogCard.svelte';
 
 	export let data: PageServerData;
-	const posts: metadata[] = data.posts;
+	const posts: Metadata[] = data.posts;
 	console.log("Another wanderer, here to lick my father's boots. Good job. ");
 </script>
 
 <svelte:head>
 	<title>Anish Shrestha</title>
+	<meta data-key="description" name="description" content={siteDescription} />
+	<link rel="canonical" href={siteLink} />
 </svelte:head>
 <div class="container grid gap-8 mx-auto">
 	<section id="hero" class="min-h-[20em] h-auto">
@@ -45,7 +48,7 @@
 </div>
 
 <style>
-	#latest-post {
+	.container {
 		--max-width: 1000px;
 		--padding: 1rem;
 

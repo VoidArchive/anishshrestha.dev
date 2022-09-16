@@ -1,10 +1,10 @@
 import { postsPerPage } from './config';
-
+import type { Metadata } from './config';
 const fetchPosts = async ({ offset = 0, limit = postsPerPage, category = '' } = {}) => {
 	const posts = await Promise.all(
 		Object.entries(import.meta.glob('/src/posts/*.md')).map(async ([path, resolver]) => {
-			// @ts-expect-error -> Could not find the type for resolver
-			const { metadata } = await resolver();
+			// @ts-expect-error -> Could not find the type for unknown metadata how does that even work?
+			const { metadata }: { metadata: Metadata } = await resolver();
 			const slug = path.split('/').pop()?.slice(0, -3);
 			return { ...metadata, slug };
 		})
@@ -13,7 +13,7 @@ const fetchPosts = async ({ offset = 0, limit = postsPerPage, category = '' } = 
 	let sortedPosts = posts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
 
 	if (category) {
-		sortedPosts = sortedPosts.filter((post) => post.categories.includes(category));
+		sortedPosts = sortedPosts.filter((post) => post.categories?.includes(category));
 	}
 
 	if (offset) {
