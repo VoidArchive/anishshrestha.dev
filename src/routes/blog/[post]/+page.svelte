@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { siteLink } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
 
@@ -29,7 +30,7 @@
 	<meta property="twitter:description" content={excerpt} />
 	<!-- TODO: Add image meta tags og:image and twitter:image -->
 
-	<link rel="canonical" href="https://anishshrestha.dev/blog/{slug}" />
+	<link rel="canonical" href="{siteLink}/blog/{slug}" />
 </svelte:head>
 
 <div class="mt-20 mx-6 md:mx-0">
