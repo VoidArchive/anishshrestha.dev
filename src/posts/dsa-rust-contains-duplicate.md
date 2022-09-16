@@ -1,6 +1,7 @@
 ---
-title: 'Data Structure and Algorithms questions with Rust: Contains Duplicate'
+title: 'DSA in Rust: Contains Duplicate'
 date: 2022-08-01
+updated: 2022-09-16
 
 excerpt: Solving contains duplicate problem in rust from best to worst solution.
 categories:
@@ -116,7 +117,9 @@ fn contains_duplicate(nums: &Vec<i32>) -> bool {
 
 
 
-## Conclusion and questions
+## Question I had
+
+Before publishing this article I asked rust community for some of the question I had and here's the answer they provided.
 - When do we use vector instead of HashSet?
   
   >Vec uses less memory than HashSet, is faster to iterate over and has guaranteed iteration order. It can be accessed by index and you can take a slice from it without copying. In most cases you should use Vec, unless you need that fast contains method.
