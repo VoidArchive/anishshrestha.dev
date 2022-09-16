@@ -1,6 +1,6 @@
 export const siteTitle = 'Anish shrestha';
 export const siteDescription =
-	'A place where I share what I am learning and where a put my unfinished project to give them my respect';
+	'A place where I share what I am learning and where I put my unfinished project to give them my respect.';
 export const siteURL = 'anishshrestha.dev';
 export const siteLink = 'https://www.anishshrestha.dev';
 export const siteAuthor = 'Anish shrestha';
