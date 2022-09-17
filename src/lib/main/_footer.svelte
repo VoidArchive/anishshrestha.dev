@@ -12,21 +12,17 @@
 			id: '/SocialSprite.svg#github',
 			url: 'https://github.com/voidarchive'
 		},
-		{
-			alt: 'instagram',
-			id: '/SocialSprite.svg#instagram',
-			url: 'https://www.instagram.com/anis_shrestha/'
-		},
+
 		{
 			alt: 'linkedin',
 			id: '/SocialSprite.svg#linkedin',
 			url: 'https://www.linkedin.com/in/voidarchive/'
 		},
-		// {
-		// 	alt: 'twitter',
-		// 	id: '/SocialSprite.svg#twitter',
-		// 	url: 'https://twitter.com/VoidArchive'
-		// },
+		{
+			alt: 'twitter',
+			id: '/SocialSprite.svg#twitter',
+			url: 'https://twitter.com/VoidArchive'
+		},
 		{
 			alt: 'mail',
 			id: '/SocialSprite.svg#mail',
