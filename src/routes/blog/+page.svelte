@@ -13,7 +13,7 @@
 <svelte:head>
 	<title>Blog - Anish shrestha</title>
 	<meta data-key="description" name="description" content={siteDescription} />
-	<link rel="canonical" href="{siteLink}/blog/" />
+	<link rel="canonical" href="{siteLink}/blog" />
 </svelte:head>
 
 <main class="container h-screen bg-nord0 flex flex-col my-20">
