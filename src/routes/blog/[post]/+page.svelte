@@ -3,7 +3,7 @@
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
 
-	const { title, excerpt, date, updated, coverImage, categories } = data.meta;
+	const { title, excerpt, date, updated } = data.meta;
 	const slug = data.slug;
 	const formattedDate = new Date(date)?.toLocaleDateString('en-us', {
 		year: 'numeric',

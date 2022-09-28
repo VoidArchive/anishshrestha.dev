@@ -1,16 +1,16 @@
 <script lang="ts">
-	import type { metadata } from '$lib/utils/config';
-	export let post: metadata;
+	import type { Metadata } from '$lib/utils/config';
+	export let post: Metadata;
 	const formattedDate = new Date(post.date)?.toLocaleDateString('en-us', {
 		year: 'numeric',
 		month: 'short',
 		day: 'numeric'
 	});
-	const formattedUpdated = new Date(post.updated)?.toLocaleDateString('en-us', {
-		year: 'numeric',
-		month: 'long',
-		day: 'numeric'
-	});
+	// const formattedUpdated = new Date(post.updated)?.toLocaleDateString('en-us', {
+	// 	year: 'numeric',
+	// 	month: 'long',
+	// 	day: 'numeric'
+	// });
 </script>
 
 <div class="grid grid-flow-row gap-4">
