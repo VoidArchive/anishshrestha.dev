@@ -4,12 +4,12 @@
 	import { onMount } from 'svelte';
 	import Quote from '$lib/components/Quote.svelte';
 
-	interface Quote {
+	interface Quotes {
 		text: string;
 		author: string;
 	}
-	const quote: Quote = quotes[Math.floor(Math.random() * quotes.length)];
-	let visible: boolean = false;
+	const quote: Quotes = quotes[Math.floor(Math.random() * quotes.length)];
+	let visible = false;
 	onMount(() => {
 		visible = true;
 	});

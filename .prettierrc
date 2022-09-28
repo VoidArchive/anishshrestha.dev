@@ -5,5 +5,4 @@
 	"printWidth": 100,
 	"pluginSearchDirs": ["."],
 	"overrides": [{ "files": "*.svelte, *.json", "options": { "parser": "svelte" } }]
-
 }
