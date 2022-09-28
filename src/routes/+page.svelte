@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Metadata } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
-	import { siteLink, siteDescription } from '$lib/utils/config';
+	import { siteLink, siteDescription, siteTitle } from '$lib/utils/config';
 
 	import Hero from '$lib/main/_hero.svelte';
 	import AboutMe from '$lib/main/_aboutMe.svelte';
@@ -16,6 +16,11 @@
 <svelte:head>
 	<title>Anish Shrestha</title>
 	<meta data-key="description" name="description" content={siteDescription} />
+	<meta property="og:title" content={siteTitle} />
+	<meta property="og:description" content={siteDescription} />
+	<meta property="og:image" content="/me.webp" />
+	<meta property="og:url" content={siteLink} />
+	<meta property="og:type" content="website" />
 	<link rel="canonical" href={siteLink} />
 </svelte:head>
 <div class="container grid gap-8 mx-auto">
