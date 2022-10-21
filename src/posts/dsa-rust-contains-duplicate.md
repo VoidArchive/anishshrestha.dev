@@ -9,7 +9,7 @@ categories:
   - DSA
 ---
 
-Solving contains duplicate problem in rust from best to worst solution.
+# Solving contains duplicate problem in rust from best to worst solution.
 
 ## Question
 
