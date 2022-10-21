@@ -9,7 +9,7 @@
 	export let data: LayoutData;
 </script>
 
-<div class="bg-nord0 h-full">
+<div class="h-full bg-nord0">
 	{#key data.currentRoute}
 		<Header />
 		<main in:fade={{ duration: 150 }} out:fade={{ duration: 150 }}>
