@@ -38,10 +38,10 @@
 
 <footer>
 	<!-- Email -->
-	<div class="hidden md:block w-10 fixed bottom-0 left-auto right-4 z-10 ">
+	<div class="fixed bottom-0 left-auto right-4 z-10 hidden w-10 md:block ">
 		<div class="line">
 			<a
-				class="text-vertical mx-auto my-5 text-nord4 hover:text-nord11 text-sm scale-y-95 hover:scale-y-100 ease-in duration-300"
+				class="text-vertical mx-auto my-5 scale-y-95 text-sm text-nord4 duration-300 ease-in hover:scale-y-100 hover:text-nord11"
 				href="mailto:anishshresthacode@gmail.com"
 				>anishshresthacode@gmail.com
 			</a>
@@ -49,8 +49,8 @@
 	</div>
 
 	<!-- Social Link -->
-	<div class="md:w-10 md:fixed bottom-0 md:right-auto md:left-4 md:z-10">
-		<div class="line gap-6 justify-center">
+	<div class="bottom-0 md:fixed md:right-auto md:left-4 md:z-10 md:w-10">
+		<div class="line justify-center gap-6">
 			{#each socialLinks as icon}
 				<a
 					href={icon.url}
@@ -60,7 +60,7 @@
 					class={icon.alt === 'mail' ? 'md:hidden' : ''}
 				>
 					<svg
-						class=" stroke-nord4 hover:stroke-nord11 scale-90 hover:scale-100 duration-300"
+						class=" scale-90 stroke-nord4 duration-300 hover:scale-100 hover:stroke-nord11"
 						width="24"
 						height="24"
 					>
@@ -72,7 +72,7 @@
 	</div>
 
 	<!-- Copyright div -->
-	<div class="text-nord4 text-center p-4 text-xs">
+	<div class="p-4 text-center text-xs text-nord4">
 		© {currentYear} Copyright: Anish shrestha. Made with SvelteKit
 	</div>
 </footer>

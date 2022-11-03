@@ -23,8 +23,8 @@
 	<meta property="og:type" content="website" />
 	<link rel="canonical" href={siteLink} />
 </svelte:head>
-<div class="container grid gap-8 mx-auto">
-	<section id="hero" class="min-h-[20em] h-auto">
+<div class="container mx-auto grid gap-8">
+	<section id="hero" class="h-auto min-h-[20em]">
 		<Hero />
 	</section>
 	<AboutMe />
@@ -32,7 +32,7 @@
 		<!-- Heading Div -->
 		<div class="flex items-center">
 			<h1 class="text-2xl font-bold text-nord11">Latest Posts</h1>
-			<div class="w-32 md:w-64 h-[1px] bg-nord3 ml-2" />
+			<div class="ml-2 h-[1px] w-32 bg-nord3 md:w-64" />
 		</div>
 		<!-- Blog grid -->
 
@@ -45,7 +45,7 @@
 		<!-- See more button -->
 		<a
 			href="/blog"
-			class=" ease-in duration-300 self-center text-center bg-transparent focus:bg-nord11 focus:text-nord4 hover:bg-nord11 text-nord11 font-semibold hover:text-nord4 py-2 px-4 border border-nord11 hover:border-transparent rounded"
+			class=" self-center rounded border border-nord11 bg-transparent py-2 px-4 text-center font-semibold text-nord11 duration-300 ease-in hover:border-transparent hover:bg-nord11 hover:text-nord4 focus:bg-nord11 focus:text-nord4"
 			>View All</a
 		>
 	</section>

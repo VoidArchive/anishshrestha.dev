@@ -33,12 +33,12 @@
 	<link rel="canonical" href="{siteLink}/blog/{slug}" />
 </svelte:head>
 
-<div class="mt-20 mx-6 md:mx-0">
+<div class="mx-6 mt-20 md:mx-0">
 	<article class="container prose prose-nord mx-auto">
 		<!-- Heading -->
 		<div>
 			<h1 class="mb-2">{title}</h1>
-			<div class="  flex flex-col text-nord4 gap-2">
+			<div class="  flex flex-col gap-2 text-nord4">
 				{#if date}
 					<time datetime={date} class="m-0">Published: {formattedDate}</time>
 				{/if}
@@ -65,6 +65,7 @@
 		issue-term="pathname"
 		theme="dark-blue"
 		crossorigin="anonymous"
-		async>
+		async
+	>
 	</script>
 </div>

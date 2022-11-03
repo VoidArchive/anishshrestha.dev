@@ -18,13 +18,13 @@
 {#if visible}
 	<div
 		in:fly={{ y: -100, duration: 2000 }}
-		class="container flex flex-col items-center justify-center max-w-3xl my-8 md:my-16"
+		class="container my-8 flex max-w-3xl flex-col items-center justify-center md:my-16"
 	>
 		<Quote class="text-xl">
 			{quote.text}
 		</Quote>
 
-		<p class="text-nord11 text-sm">
+		<p class="text-sm text-nord11">
 			- {quote.author}
 		</p>
 	</div>

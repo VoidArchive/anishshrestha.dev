@@ -3,9 +3,9 @@
 	export { className as class };
 </script>
 
-<p class="text-center font-semibold text-nord4 p-4 {className}">
+<p class="p-4 text-center font-semibold text-nord4 {className}">
 	<svg
-		class=" rotate-180 inline-block text-nord11"
+		class=" inline-block rotate-180 text-nord11"
 		xmlns="http://www.w3.org/2000/svg"
 		width="24"
 		height="24"

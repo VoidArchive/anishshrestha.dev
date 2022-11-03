@@ -4,12 +4,12 @@
 	import { navLinks } from '$lib/utils/config';
 </script>
 
-<header class="container mx-auto sticky top-0 bg-nord0 z-20 ">
-	<nav class=" pt-6 px-4 md:px-8 flex items-center justify-between ">
+<header class="container sticky top-0 z-20 mx-auto bg-nord0 ">
+	<nav class=" flex items-center justify-between px-4 pt-6 md:px-8 ">
 		<!-- Anish Logo -->
 		<a alt="anish-logo" href="/"
 			><svg
-				class="hover:fill-nord11 fill-nord4 transition-all	"
+				class="fill-nord4 transition-all hover:fill-nord11	"
 				width="92"
 				height="36"
 				viewBox="0 0 92 36"
@@ -36,7 +36,7 @@
 
 		<!-- Nav Items -->
 		<MobileMenu />
-		<div class="hidden md:flex gap-8">
+		<div class="hidden gap-8 md:flex">
 			{#each navLinks as link}
 				<a
 					target={link.text === 'Feedback' ? '_blank' : ''}
@@ -53,7 +53,7 @@
 			<!-- Github Icon SVG -->
 			<a href="https://github.com/VoidArchive/anishshrestha.dev" rel="noopener" target="_blank">
 				<svg
-					class="hover:stroke-nord11 stroke-[0.7px] stroke-nord4 transition-all"
+					class="stroke-nord4 stroke-[0.7px] transition-all hover:stroke-nord11"
 					width="24"
 					height="24"
 				>

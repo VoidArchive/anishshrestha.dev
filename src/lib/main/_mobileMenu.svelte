@@ -13,7 +13,7 @@
 	{#if visible}
 		<div
 			in:fade
-			class="rounded-md flex z-10 absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-nord3 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+			class="absolute left-6 right-6 z-10 mt-10 flex flex-col items-center space-y-6 self-end rounded-md bg-nord3 py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
 		>
 			{#each mobileNavLinks as link}
 				<a on:click={menuToggle} href={link.url} class="text-nord4">{link.text}</a>

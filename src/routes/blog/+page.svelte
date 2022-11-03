@@ -16,7 +16,7 @@
 	<link rel="canonical" href="{siteLink}/blog" />
 </svelte:head>
 
-<main class="container h-screen bg-nord0 flex flex-col my-20">
+<main class="container my-20 flex h-screen flex-col bg-nord0">
 	<div class="">
 		{#each posts as post}
 			<BlogCard {post} />
