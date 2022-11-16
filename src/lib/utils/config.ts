@@ -15,11 +15,10 @@ interface Link {
 }
 
 export const navLinks: Link[] = [
-	{
-		text: 'Graveyard',
-		url: '/projects',
-		disabled: true
-	},
+	// {
+	// 	text: 'Projects',
+	// 	url: '/projects'
+	// },
 	{
 		text: 'Blog',
 		url: '/blog'
@@ -40,10 +39,10 @@ export const mobileNavLinks: Link[] = [
 		text: 'Home',
 		url: '/'
 	},
-	{
-		text: 'Graveyard',
-		url: '/projects'
-	},
+	// {
+	// 	text: 'Projects',
+	// 	url: '/projects'
+	// },
 	{
 		text: 'Blog',
 		url: '/blog'
@@ -71,3 +70,22 @@ export interface Metadata {
 	updated: Date;
 	categories?: string[];
 }
+
+export interface Project {
+	title: string;
+	description: string;
+	techs: string[];
+	url: string;
+	imageUrl: string;
+}
+
+export const projects: Project[] = [
+	{
+		title: 'Automate Meroshare with Python',
+		description:
+			'A CLI tool that will automatically fill the new IPO form in meroshare and check the result of multiple people at once.',
+		techs: ['python', 'svelte'],
+		url: 'https://github.com/VoidArchive/meroshare-automate',
+		imageUrl: '/me.webp'
+	}
+];
