@@ -7,6 +7,7 @@
 	import AboutMe from '$lib/main/_aboutMe.svelte';
 	import Contact from '$lib/main/_contact.svelte';
 	import BlogCard from '$lib/components/BlogCard.svelte';
+	import Projects from '$lib/main/_projects.svelte';
 
 	export let data: PageServerData;
 	const posts: Metadata[] = data.posts;
@@ -49,6 +50,7 @@
 			>View All</a
 		>
 	</section>
+	<Projects />
 	<Contact />
 </div>
 

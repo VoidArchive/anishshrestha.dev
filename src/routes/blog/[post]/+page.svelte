@@ -57,7 +57,7 @@
 		{@html data.PostContent}
 	</article>
 </div>
-
+<!-- 
 <div>
 	<script
 		src="https://utteranc.es/client.js"
@@ -68,4 +68,4 @@
 		async
 	>
 	</script>
-</div>
+</div> -->
