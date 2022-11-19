@@ -8,7 +8,7 @@
 		text: string;
 		author: string;
 	}
-	let visible = false;
+	$: visible = false;
 	let quote: Quotes;
 
 	function reloadQuote() {
