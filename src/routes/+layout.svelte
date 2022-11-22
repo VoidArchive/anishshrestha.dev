@@ -12,7 +12,7 @@
 <div class="h-full bg-nord0">
 	{#key data.currentRoute}
 		<Header />
-		<main in:fade={{ duration: 150 }} out:fade={{ duration: 150 }}>
+		<main transition:fade={{ duration: 150 }}>
 			<slot />
 		</main>
 		<Footer />
