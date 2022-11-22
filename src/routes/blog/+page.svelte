@@ -2,7 +2,6 @@
 	import type { Metadata } from '$lib/utils/config';
 	import type { PageServerData } from './$types';
 	import { siteDescription, siteLink } from '$lib/utils/config';
-	import {} from '$lib/utils/config';
 
 	import BlogCard from '$lib/components/BlogCard.svelte';
 
