@@ -19,8 +19,8 @@
 					rel="noopener"
 					target="_blank">Bhetum</a
 				>
-				that makes meeting new people easy. Before that, I worked as a backend engineer with python and
-				Odoo The quote you see above are things that resonates with me, it loads new one on every refresh.
+				that makes meeting new people easy. Before that, I worked as a backend engineer with python.
+				The quote you see above are things that resonates with me, it loads new one on every refresh.
 				Try it out!
 			</p>
 			<p class="text-nord4">
