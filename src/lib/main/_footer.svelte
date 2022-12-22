@@ -70,11 +70,6 @@
 			{/each}
 		</div>
 	</div>
-
-	<!-- Copyright div -->
-	<div class="p-4 text-center text-xs text-nord4">
-		© {currentYear} Copyright: Anish shrestha. Made with SvelteKit
-	</div>
 </footer>
 
 <style>
